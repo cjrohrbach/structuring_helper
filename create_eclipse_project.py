@@ -6,7 +6,6 @@ import shutil
 def create_dot_project(name, path):
     project_xml = minidom.parse(project_root + "/static/project_template.xml")
     name_element = project_xml.getElementsByTagName('name')[0].firstChild
-    print(name_element.data)
 
     name_element.data = name
 
@@ -23,7 +22,6 @@ def copy_class_path(path):
 def create_eclipse_project(name, path):
     create_dot_project(name, path)
     copy_class_path(path)
-    print(path)
     src = create_folder(path, "src")
     create_folder(path, "bin")
     return src # return the src folder

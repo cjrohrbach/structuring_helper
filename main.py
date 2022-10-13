@@ -15,7 +15,7 @@ if __name__ == '__main__':
     print("Path: ", file_path)
     res = get_files(file_path)
 
-    out_path = filedialog.askdirectory(title="In Path")
+    out_path = filedialog.askdirectory(title="Out Path")
 
     copy_files_to_structure(out_path, res)
 

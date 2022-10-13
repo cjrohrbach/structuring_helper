@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 from helper_methods import *
 
 def crawl_folder(path, res):
@@ -30,7 +31,7 @@ def crawl_folder(path, res):
 
 				# print("Ending: ", c_ending)
 				if c_ending == "pdf":
-					res['pdf'].append(c_path)
+					res['pdf'].append({"file_name": c,"path": c_path})
 
 				if c_ending == "java":
 					# print("found java ", c_path)
@@ -75,5 +76,5 @@ def get_files(root_path):
 			crawl_folder(path, structure)
 			res.append(structure)
 
-	print(res)
+	print(json.dumps(res, indent=4))
 	return res
