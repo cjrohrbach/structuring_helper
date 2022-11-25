@@ -1,10 +1,19 @@
 # structuring_helper
 Small python program to make any java project structure a eclipse project
 
+## Install
+Prerequisits:
+- Python
+- Tkinter
+
+```bash
+pip install -r requirements.txt
+```
+
 ## how to use it
 
-```
-python3 main.py
+```bash
+python3 gui.py
 ```
 
 With the first file dialog choose the folder containing the ilias download. Each submission should be in a folder. 
