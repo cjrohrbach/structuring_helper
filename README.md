@@ -1,5 +1,5 @@
 # structuring_helper
-Small python program to make any java project structure a eclipse project
+This small python program was written to ease the correction of exercises handed in trough ilias, by students of a programming course. It creates valid eclipse project for all hand ins and splits into equal parts.
 
 ## Install
 Prerequisits:
